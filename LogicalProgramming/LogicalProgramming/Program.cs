@@ -26,7 +26,8 @@ public class Program
                 prime.primeCheck();
                 break;
             case 4:
-
+                ReverseNumber revere = new ReverseNumber();
+                revere.revereNumber();
                 break;
             case 5:
 
