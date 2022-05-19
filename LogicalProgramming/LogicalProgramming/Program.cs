@@ -19,7 +19,8 @@ public class Program
                 f.Fibonacci_Series();
                 break;
             case 2:
-                
+                PerfectNumber perfect = new PerfectNumber();
+                perfect.perfect_Number();
                 break;
             case 3:
                 PrimeNumber prime = new PrimeNumber();
