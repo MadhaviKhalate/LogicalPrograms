@@ -19,10 +19,11 @@ public class Program
                 f.Fibonacci_Series();
                 break;
             case 2:
-
+                
                 break;
             case 3:
-
+                PrimeNumber prime = new PrimeNumber();
+                prime.primeCheck();
                 break;
             case 4:
 
