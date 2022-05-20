@@ -32,7 +32,7 @@ public class Program
                 break;
             case 5:
                 CouponNumber coupon = new CouponNumber();
-                coupon.DistinctCoupon();
+                coupon.DistinctCouponNum();
                 break;
             case 6:
                 StopWatchTime stop_watch = new StopWatchTime();
@@ -45,7 +45,8 @@ public class Program
 
                 break;
             case 9:
-
+                TemperatureConversion temp = new TemperatureConversion();
+                temp.ConvertTemperature();
                 break;
             case 10:
 

@@ -8,8 +8,32 @@ namespace LogicalProgramming
 {
 	internal class CouponNumber
 	{
-         
-        public void DistinctCoupon()
+		int CouponCount = 0, UniqueCouponCount = 0, i = 0, number;
+		List<int> couponCodes = new List<int>();
+		Random rand = new Random();
+		public void DistinctCouponNum()
+        {
+			Console.WriteLine("Enter the number for genearting coupon ");
+			number = Convert.ToInt32(Console.ReadLine());
+			while (UniqueCouponCount < number)
+			{
+				int couponNum = rand.Next();
+				CouponCount++;
+				if (!couponCodes.Contains(couponNum))
+				{
+					couponCodes.Add(couponNum);
+					UniqueCouponCount++;
+				}
+
+			}
+			foreach (int couponCode in couponCodes)
+			{
+				Console.WriteLine(couponCode);
+			}
+			Console.WriteLine("Number of times taken to generate {0} Unique " +
+                "coupon code is {1}", number, CouponCount);
+		}		
+		/*public void DistinctCoupon()
         {
             Random rand = new Random();
             int max = 100000, number, randNum, i;
@@ -32,6 +56,6 @@ namespace LogicalProgramming
 				couponCode = sb.ToString();
 				Console.WriteLine("Coupon Code: " + couponCode);
 			}
-		}
+		}*/
 	}
 }
