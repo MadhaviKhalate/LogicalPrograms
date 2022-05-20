@@ -49,7 +49,7 @@ public class Program
                 temp.ConvertTemperatureUnit();
                 break;
             case 10:
-
+                MonthlyPayment.monthlyPayment();
                 break;
             case 11:
 
