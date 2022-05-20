@@ -9,12 +9,14 @@ namespace LogicalProgramming
 {
     internal class StopWatchTime
     {
-		Stopwatch stopwatch = new Stopwatch();
+		
 		public void calculateTime()
-		{
-			stopwatch.Start();
-            //Thread.Sleep(2000);
-            Console.WriteLine("Wait....and pres 'y' key to stop timer ");
+        { 
+            
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
+            Console.WriteLine("Timer start now...\nWait....and press 'y' key to stop timer ");
+
             if (Console.ReadKey().Key == ConsoleKey.S)
             {
                 stopwatch.Stop();
