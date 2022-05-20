@@ -31,10 +31,12 @@ public class Program
                 revere.revereNumber();
                 break;
             case 5:
-
+                CouponNumber coupon = new CouponNumber();
+                coupon.DistinctCoupon();
                 break;
             case 6:
-
+                StopWatchTime stop_watch = new StopWatchTime();
+                stop_watch.calculateTime();
                 break;
             case 7:
 
