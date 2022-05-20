@@ -45,7 +45,8 @@ public class Program
 
                 break;
             case 9:
-
+                TemparatureConversion temp = new TemparatureConversion();
+                temp.ConvertTemperatureUnit();
                 break;
             case 10:
 
