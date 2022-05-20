@@ -13,7 +13,6 @@ namespace LogicalProgramming
 		public void calculateTime()
 		{
 			stopwatch.Start();
-            //Thread.Sleep(2000);
             Console.WriteLine("Wait....and pres 'y' key to stop timer ");
             if (Console.ReadKey().Key == ConsoleKey.S)
             {
