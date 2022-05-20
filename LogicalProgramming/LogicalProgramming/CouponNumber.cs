@@ -30,10 +30,7 @@ namespace LogicalProgramming
 				}
 				couponCode = sb.ToString();
 				Console.WriteLine("Coupon Code: " + couponCode);
-			}
-            int CouponCount = 0, UniqueCouponCount = 0, i = 0;
-            Random Random = new Random();
-            List<int> couponCodes = new List<int>();      
+			}  
         }*/
         public void DistinctCoupon()
         {
