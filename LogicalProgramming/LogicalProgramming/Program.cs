@@ -42,7 +42,14 @@ public class Program
 
                 break;
             case 8:
-
+                int day, month, year;
+                Console.WriteLine("Enter the day");
+                day = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the month");
+                month = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Enter the day");
+                year = Convert.ToInt32(Console.ReadLine());
+                DayOfWeek.dayOfWeekProg(day,month,year);
                 break;
             case 9:
                 TemparatureConversion temp = new TemparatureConversion();
