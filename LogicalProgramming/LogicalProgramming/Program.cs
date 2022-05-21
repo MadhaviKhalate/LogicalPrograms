@@ -62,13 +62,20 @@ public class Program
                 MonthlyPayment.monthlyPayment();
                 break;
             case 11:
-
+                Console.WriteLine("Enter value for c");
+                int c = Convert.ToInt32(Console.ReadLine());
+                SquartRoot.root(c);
                 break;
             case 12:
-
+                Console.WriteLine("Enter Value for number");
+                int number = Convert.ToInt32(Console.ReadLine());
+                ToBinary.convertToBinary(number);
                 break;
             case 13:
-
+                SwappingNibbles swap = new SwappingNibbles();
+                Console.WriteLine("Enter Value for number");
+                int number1 = Convert.ToInt32(Console.ReadLine());
+                swap.swapNibbles(number1);
                 break;
             default:
                 Console.WriteLine("You entered wrong option");
