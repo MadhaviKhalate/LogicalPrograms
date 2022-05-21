@@ -7,7 +7,7 @@ public class Program
     {
         Console.WriteLine("1.Fibonacci Series\n2.Perfect Number\n3.Prime Number\n4.Reverse Number" +
             "\n5.Coupon Number\n6.StopWatch Program\n7.Vending Maching\n8.Day Of Week\n9.Temperature"+ 
-            "Conversion\n10.Monthly Payment.\n11Squart Root.\n12.Convert To Binary\n13.Swap Nibbles");
+            "Conversion\n10.Monthly Payment.\n11.Squart Root.\n12.Convert To Binary\n13.Swap Nibbles");
 
         Console.WriteLine("Enter option ");
         int option = Convert.ToInt32(Console.ReadLine());
@@ -39,7 +39,10 @@ public class Program
                 stop_watch.calculateTime();
                 break;
             case 7:
-
+                VendingMachine vending = new VendingMachine();
+                Console.WriteLine("Enter value for Money");
+                int moneyValue = Convert.ToInt32(Console.ReadLine());
+                vending.changeForMoney(moneyValue);
                 break;
             case 8:
                 int day, month, year;
